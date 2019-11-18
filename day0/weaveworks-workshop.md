@@ -25,6 +25,7 @@ Environment: lukebakerkubecon@gmail.com (used kubernetes default config)
     * _Alerts should link to dashboard and playbook_
 * Structured Logging
     * Avoid logging to files
+    * log to stdout is easiest probably
 * Tracing
     * Opentelemetry?
     * opentelemetry.io
@@ -48,6 +49,36 @@ Environment: lukebakerkubecon@gmail.com (used kubernetes default config)
 * Lockdown runtime context
     * Init contanier to configure (has more privs), then app containers have less privs
 
-### something else
- 
-    
+### Cluster checklist
+* Deployment pipeline (inf automation)
+    * seperate from build pipeline
+    * flux?
+* Build pipeline
+    * build artifact
+* Image registry
+    * security scanning here
+    * creds for push and pull
+* Monitoring inf
+    * prometheus has service discovery with k8
+        * hard to run two prometheus boxes
+        * _use Cortex and Thanos (open source). Cortex is CNCF and supports multi-tenancy_
+    * routing alert and triggers
+* Shared storage
+    * size and performance before choosing
+* Secrets management
+    * hashicorp vault
+    * bitnami sealed secrets (is fav)
+* Routing traffic
+    * Ingress controller
+        * can do logging and authentication, but that may be better on api gateway
+    * API Gateway
+        * can replace ingress controller (higher layer ingress controller)
+        * _Ambassador (envoy) is k8 native_
+    * Ingress Security (WAF)
+        * AWS waf, nginx mod-security, cloudflare
+        * This would be better as someone else's problem
+    * Service Mesh
+        * may not be needed,
+        * tracing without instrumentation
+        * service to service tls
+        * fine grained traffic policies, but lots of complexity
