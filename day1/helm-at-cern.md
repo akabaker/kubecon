@@ -20,3 +20,5 @@ Use 'Umbrella charts'
 ### Flux and GitOps
 docker push -> registry
 git push -> meta chart <- git pull [flux cd -> helm release <-> helm operator]
+
+ricardo.rocha@cern.ch
