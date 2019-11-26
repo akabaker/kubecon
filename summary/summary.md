@@ -17,6 +17,19 @@ _Slides: http://tinyurl.com/kubecon-2019-workshop_
 
 ---
 
+![clusterimg](C:/Users/luke.baker/kubecon/summary/images/weave_1.png)
+
+---
+
+![clusterimg2](C:/Users/luke.baker/kubecon/summary/images/weave_2.png)
+
+---
+
+![clusterimg3](C:/Users/luke.baker/kubecon/summary/images/weave_3.png)
+
+
+---
+
 # GitOps
 _https://github.com/fluxcd/flux_
 * Use Git as the single source of truth
@@ -28,7 +41,7 @@ _https://github.com/fluxcd/flux_
 
 ---
 
-![flux cd image](.\images\flux_1.jpg)
+![flux cd image](C:/Users/luke.baker/kubecon/summary/images/flux_1.jpg)
 
 
 ---
@@ -46,7 +59,7 @@ _https://www.openpolicyagent.org/_
 # Vitess
 _https://vitess.io/_
 
-* Database clustering system for MySQL
+Database clustering system for MySQL
 >Vitess is a database solution for deploying, scaling and managing large clusters of MySQL instances. It’s architected to run as effectively in a public or private cloud architecture as it does on dedicated hardware. It combines and extends many important MySQL features with the scalability of a NoSQL database. Vitess can help you with the following problems:
 >
 >* Scaling a MySQL database by allowing you to shard it, while keeping application changes to a minimum.
@@ -54,6 +67,20 @@ _https://vitess.io/_
 >* Deploying and managing a large number of MySQL instances.
 ---
 
+# Freddie Mac - Migration
+_https://static.sched.com/hosted_files/kccncna19/63/Tetrate%20-%20Freddie%20Mac%20-%20Istio%20Service%20Mesh.pdf_
+
+Freddie Mac migrated to a service mesh before moving everything to k8
+
+---
+
+![freddie diagram](C:/Users/luke.baker/kubecon/summary/images/freddiemac_1.png)
+
+---
+
+![freddie diagram](C:/Users/luke.baker/kubecon/summary/images/freddie_2.png)
+
+---
 
 # High level items
 * Service mesh all over the place
@@ -63,6 +90,7 @@ _https://vitess.io/_
 * Prometheous
     * All over the place but not HA!!
     * Thanos is available, but takes some work
+* Go through k8 the hard way
 
 ---
 

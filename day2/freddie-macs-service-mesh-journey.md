@@ -10,7 +10,7 @@ Sidecar become new demarcation between app and network.
 
 ### To software defined instrastructure
 The mesh abstracts common app support features into  the service platform.
-SRE (side card, reliability team lol)
+SRE (sidecar reliability team lol)
 
 ### Security use cases
 * Istio is critical for zero trust and micro-segmentation
